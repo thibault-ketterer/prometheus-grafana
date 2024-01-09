@@ -13,4 +13,4 @@ change the pass
 
 enjoy
 
-[screenshot of grafana](screenshot.png)
+![screenshot of grafana](screenshot.png)
