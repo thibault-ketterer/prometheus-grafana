@@ -1,0 +1,16 @@
+
+process_names:
+  - name: "{{.Comm}}"
+    cmdline:
+    - '.+'
+
+      # {{.Comm}} contains the basename of the original executable, i.e. 2nd field in /proc/<pid>/stat
+      # {{.ExeBase}} contains the basename of the executable
+      # {{.ExeFull}} contains the fully qualified path of the executable
+      # {{.Username}} contains the username of the effective user
+      # {{.Matches}} map contains all the matches resulting from applying cmdline regexps
+      # {{.PID}} contains the PID of the process. Note that using PID means the group will only contain a single process.
+      # {{.StartTime}} contains the start time of the process. This can be useful in conjunction with PID because PIDs get reused over time.
+      # {{.Cgroups}} contains (if supported) the cgroups of the process (/proc/self/cgroup). This is particularly useful for identifying to which container a process belongs.
+
+# https://github.com/ncabatoff/process-exporter
