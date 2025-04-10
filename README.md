@@ -6,6 +6,9 @@ just
     sudo chown -R nobody:nogroup data
     docker-compose up -d
 
+prom is
+http://prometheus:9090
+
 go to http://localhost:3000
 admin/admin
 
